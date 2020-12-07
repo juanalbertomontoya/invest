@@ -605,4 +605,16 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  section.inteligencia-financiera h2 {
+    font-size: 42px;
+  }
+
+  #titulo {
+    font-size: 42px;
+  }
+
+  .texto-acceso-online p {
+    font-size: 70px;
+  }
+
 }

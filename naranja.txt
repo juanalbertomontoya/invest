@@ -1,0 +1,651 @@
+
+
+/* Estilos de las fuentes */
+
+@font-face {
+  font-family: "Lato Black";
+  src: url("fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("fonts/Lato-Light.ttf");
+}
+
+h1 {
+  font-family: 'Lato Black', sans-serif;
+}
+
+h2 {
+  font-family: 'Lato Bold', sans-serif;
+  color: #ef6c00;
+}
+
+h3 {
+  font-family: 'Lato Light', sans-serif;
+}
+
+p {
+  font-family: 'Lato Regular', sans-serif;
+}
+
+a {
+  font-family: 'Lato Bold', sans-serif;
+  text-decoration: none;
+}
+
+strong {
+  font-family: 'Lato Bold', sans-serif;
+}
+
+/* Estilos del background */
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+section {
+  width: 100vw;
+  height: 100%;
+}
+
+
+#myvideo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+}
+
+.background-darker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+section {
+  background: #ffffff;
+}
+
+.texto-background {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: #ef6c00;
+}
+
+.titulo-background {
+  font-size: 18px;
+  margin-bottom: 0.25em;
+}
+
+.subtitulo-background {
+  font-size: 30px;
+}
+
+/* Estilos del menu */
+
+.menu-principal {
+  position: fixed;
+  width: 100vw;
+  height: 141px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+
+.menu-principal.scroll {
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.02);
+}
+
+.menu-principal .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 18px 18px 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+#logo-menu {
+  margin-top: 18px;
+  height: calc(100% - 18px);
+  width: fit-content;
+}
+
+#logo-menu img {
+  height: 75%;
+}
+
+.menu li {
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 3px solid #ef6c00;
+  width: auto;
+  height: auto;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.menu a {
+  display: inline-block;
+  width: auto;
+  padding: 12px;
+  font-family: 'Lato Black';
+  color: #ef6c00;
+  font-size: 18px;
+  transition: all 0.25s ease-in-out;
+}
+
+
+
+.boton-menu > a > span {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ef6c00;
+  transition: all 0.3s ease-in-out;
+}
+
+.boton-menu.on > a > span {
+  width: 100%;
+}
+
+.boton-menu.on a {
+  color: #ffffff;
+}
+
+.boton-mobile {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Estilos de Sobre nosotros */
+
+section.sobre-nosotros {
+  padding-top: 50px;
+}
+
+
+section.sobre-nosotros > div {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  grid-gap: 48px;
+}
+
+
+section.sobre-nosotros .imagen {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.degradado {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);;
+}
+
+section.sobre-nosotros .imagen img {
+  width: 100%;
+}
+
+.texto-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-sobre-nosotros h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 1.30em;
+}
+
+.texto-sobre-nosotros p {
+  margin-top: 2em;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+
+/* Estilos de los servicios */
+
+section.servicios {
+  padding-top: 48px;
+}
+
+.tipos-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+  padding-bottom: 48px;
+}
+
+.servicio h2 {
+  font-size: 24px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.servicio p {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+#titulo-servicios {
+  font-size: 48px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+
+/* Estilos de inteligencia financiera */
+
+section.inteligencia-financiera {
+  background: rgba(241, 241, 241, 0.90);
+  padding: 96px 0;
+}
+
+section.inteligencia-financiera h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.inteligencia-financiera p {
+  font-size: 20px;
+  line-height: 1.25em;
+  text-align: center;
+}
+
+/* Estilos de Informacion del mercado */
+
+section.informacion-mercado {
+  padding-bottom: 200px;
+}
+
+
+section.informacion-mercado > div {
+  display: grid;
+  grid-template-areas: "titulo  titulo"
+                       "mercados mercados"
+                       "criptomonedas monedas";
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto);
+  grid-template-rows: repeat(auto)
+}
+
+
+section.informacion-mercado h2 {
+  font-size: 38px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.grafica {
+  height: 500px;
+}
+
+#titulo {
+  margin-top: 2em;
+  grid-area: titulo;
+  font-size: 48px;
+}
+
+#mercados {
+  grid-area: mercados;
+  margin-bottom: 80px;
+}
+
+#criptomonedas {
+  grid-area: criptomonedas;
+}
+
+#monedas {
+  grid-area: monedas;
+}
+
+/* Estilos de acceso online */
+
+section.acceso-online {
+  height: 560px;
+  background-size: auto 100%;
+  background-image: url(img/acceso-online.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texto-acceso-online {
+  display: inline-block;
+  width: 50%;
+  height: calc(100% - 141px);
+  margin-top: 141px;
+  position: relative;
+}
+
+.texto-acceso-online > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1.0);
+}
+
+.texto-acceso-online.on > div {
+  transform: translateX(-50%) translateY(-50%) scale(1.1);
+}
+
+.texto-acceso-online p {
+  font-size: 100px;
+  color: #ef6c00;
+  text-align: center;
+}
+
+.texto-acceso-online span {
+  display: inline-block;
+  width: calc(100% - 6px);
+  border: 3px solid #ef6c00;
+  color: #ef6c00;
+  text-align: center;
+  font-size: 24px;
+  padding: 0.5em 0;
+  margin-top: 0.5em;
+}
+
+.texto-acceso-online.on span {
+  background: #ef6c00;
+  color: #ffffff;
+}
+
+/* Estilos de Redes contacto */
+
+section.redes-contacto {
+  padding: 100px 0;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes span {
+  color: #ffffff;
+  padding: 0.4em;
+  font-size: 28px;
+  border-radius: 50%;
+  background: #ef6c00;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.redes span:hover {
+  color: #ef6c00;
+  background: #ffffff;
+}
+
+.redes span:not(last-child) {
+  margin-right: 0.5em;
+}
+
+.contactanos {
+  margin-top: 8em;
+  display: inline-block;
+  width: 100%;
+}
+
+.contactanos > p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 2em;
+}
+
+.form-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.form-label {
+  font-family: 'Lato Regular';
+  font-size: 18px;
+  margin: 1em 0 0.5em 0;
+}
+
+.form-input {
+  background: #dbdbdb;
+  border: 2px solid #c4c4c4;
+  font-family: 'Lato Regular';
+  font-size: 16px;
+  padding: 0.7em;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+}
+
+.info h2 {
+  font-size: 20px;
+  margin: 1.5em 0;
+}
+
+.info p {
+  display: inline;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.info a {
+  color: #000000;
+}
+
+.mail {
+  margin-top: 0.5em;
+}
+
+.form-submit {
+  background: #ffffff;
+  border: 3px solid #ef6c00;
+  font-family: 'Lato Bold';
+  font-size: 18px;
+  margin-top: 1em;
+  padding: 0.5em 0;
+  cursor: pointer;
+  color: #ef6c00;
+}
+
+.form-submit:hover {
+  background: #ef6c00;
+  color: #ffffff;
+}
+
+
+/* Media queries de cada definicion */
+
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: calc(100% - 50px)
+  }
+
+  section.sobre-nosotros > div {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 48px;
+  }
+
+  .tipos-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+  }
+
+  section.informacion-mercado > div {
+    grid-template-areas: "titulo"
+                         "mercados"
+                         "criptomonedas"
+                         "monedas";
+  }
+
+  section.acceso-online {
+    background-position: left;
+  }
+
+  section.acceso-online .container {
+    position: relative;
+  }
+
+  .texto-acceso-online {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+
+  .form-info {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+}
+
+
+
+@media (max-width: 770px) {
+
+  .menu-principal {
+    height: 90px;
+  }
+
+  .boton-mobile {
+    display: inline;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    bottom: unset;
+    flex-direction: column;
+    margin: 0 0 18px 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .menu.on {
+    right: 0;
+  }
+
+  .menu-principal.scroll .menu {
+    top: 60px;
+  }
+
+  .menu-principal.scroll {
+    height: 60px;
+  }
+
+  .menu li:not(:last-child) {
+      margin-right: 0;
+  }
+
+  .menu li {
+    border-radius: unset;
+    background: #000000;
+    border-bottom: 3px solid #ffffff;
+  }
+
+  .menu a {
+    color: #ffffff;
+  }
+
+  .tipos-servicios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.inteligencia-financiera h2 {
+    font-size: 42px;
+  }
+
+  #titulo {
+    font-size: 42px;
+  }
+
+  .texto-acceso-online p {
+    font-size: 70px;
+  }
+
+}

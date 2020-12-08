@@ -133,12 +133,12 @@ section {
 
 #logo-menu {
   margin-top: 18px;
-  height: 100%;
+  height: calc(100% - 18px);
   width: fit-content;
 }
 
 #logo-menu img {
-  height: 40%;
+  height: 75%;
 }
 
 .menu li {

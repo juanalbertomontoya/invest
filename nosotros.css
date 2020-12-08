@@ -1,0 +1,76 @@
+
+.background {
+  height: 70vh;
+}
+
+section.nosotros {
+  padding: 50px 0 100px 0;
+}
+
+
+section.nosotros h2 {
+  font-size: 48px;
+}
+
+section.nosotros p {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+section.nosotros > div > p {
+  padding-bottom: 4em;
+}
+
+.valores > p {
+  margin-bottom: 2em;
+}
+
+.cuadrantes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+section.nosotros .valor h2 {
+  font-size: 22px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 0.25em;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 22px;
+}
+
+section.nosotros .valor {
+  height: 60px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+section.nosotros .valor.on {
+  height: auto;
+}
+
+section.nosotros .valor h2 span {
+  float: right;
+}
+
+.valor p {
+  margin-bottom: 2em;
+}
+
+
+@media (max-width: 770px) {
+
+  .cuadrantes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.nosotros h2 {
+    font-size: 42px;
+  }
+
+  section.nosotros .valor h2 {
+    font-size: 18px;
+  }
+
+}

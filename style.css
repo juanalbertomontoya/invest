@@ -95,6 +95,21 @@ section {
   background: #ffffff;
 }
 
+.texto-background {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.titulo-background {
+  font-size: 18px;
+  margin-bottom: 0.25em;
+}
+
+.subtitulo-background {
+  font-size: 30px;
+}
+
 /* Estilos del menu */
 
 .menu-principal {

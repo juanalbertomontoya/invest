@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-family: 'Lato Bold', sans-serif;
-  color: #243f67;
+  color: #008001;
 }
 
 h3 {
@@ -104,7 +104,7 @@ section {
   position: absolute;
   top: 50%;
   left: 25%;
-  color: #243f67;
+  color: #008001;
 }
 
 .titulo-background {
@@ -166,7 +166,7 @@ section {
   position: relative;
   border-radius: 26px;
   overflow: hidden;
-  border: 3px solid #243f67;
+  border: 3px solid #008001;
   width: auto;
   height: auto;
 }
@@ -180,7 +180,7 @@ section {
   width: auto;
   padding: 12px;
   font-family: 'Lato Black';
-  color: #243f67;
+  color: #008001;
   font-size: 18px;
   transition: all 0.25s ease-in-out;
 }
@@ -194,7 +194,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: #243f67;
+  background: #008001;
   transition: all 0.3s ease-in-out;
 }
 
@@ -232,8 +232,17 @@ section.sobre-nosotros > div {
 section.sobre-nosotros .imagen {
   width: auto;
   height: auto;
+  position: relative;
 }
 
+.degradado {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);;
+}
 
 section.sobre-nosotros .imagen img {
   width: 100%;
@@ -386,15 +395,15 @@ section.acceso-online {
 
 .texto-acceso-online p {
   font-size: 100px;
-  color: #243f67;
+  color: #008001;
   text-align: center;
 }
 
 .texto-acceso-online span {
   display: inline-block;
   width: calc(100% - 6px);
-  border: 3px solid #243f67;
-  color: #243f67;
+  border: 3px solid #008001;
+  color: #008001;
   text-align: center;
   font-size: 24px;
   padding: 0.5em 0;
@@ -402,7 +411,7 @@ section.acceso-online {
 }
 
 .texto-acceso-online.on span {
-  background: #243f67;
+  background: #008001;
   color: #ffffff;
 }
 
@@ -422,13 +431,13 @@ section.redes-contacto {
   padding: 0.4em;
   font-size: 28px;
   border-radius: 50%;
-  background: #243f67;
+  background: #008001;
   transition: all 0.3s ease-in-out;
   text-align: center;
 }
 
 .redes span:hover {
-  color: #243f67;
+  color: #008001;
   background: #ffffff;
 }
 
@@ -498,17 +507,17 @@ textarea {
 
 .form-submit {
   background: #ffffff;
-  border: 3px solid #243f67;
+  border: 3px solid #008001;
   font-family: 'Lato Bold';
   font-size: 18px;
   margin-top: 1em;
   padding: 0.5em 0;
   cursor: pointer;
-  color: #243f67;
+  color: #008001;
 }
 
 .form-submit:hover {
-  background: #243f67;
+  background: #008001;
   color: #ffffff;
 }
 
